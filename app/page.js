@@ -7,6 +7,8 @@ import About from "@/components/About";
 import TestingModules from "@/components/TestingModules";
 import Dashboard from "@/components/Dashboard";
 import ReportTable from "@/components/ReportTable";
+import ActivityTimeline from "@/components/ActivityTimeline";
+import RealVsSimulated from "@/components/RealVsSimulated";
 import LearningGuide from "@/components/LearningGuide";
 import Footer from "@/components/Footer";
 
@@ -26,6 +28,8 @@ export default function Home() {
       <TestingModules />
       <Dashboard onTestComplete={handleTestComplete} />
       <ReportTable reportData={reportData} />
+      <ActivityTimeline reportData={reportData} />
+      <RealVsSimulated />
       <LearningGuide />
       <Footer />
     </main>

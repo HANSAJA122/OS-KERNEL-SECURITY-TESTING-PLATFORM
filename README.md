@@ -111,3 +111,13 @@ In enterprise security, defensive agents (like *Falcon* or *Wazuh*) and offensiv
 3. **Hazardous**: Running exploit payloads can compromise the host security, making it vulnerable to external attacks.
 
 Therefore, this platform represents the **professional endpoint protection standard**—auditing system settings defensively to identify risks *before* they can be exploited.
+
+---
+
+## 🔮 Future Improvements & Portfolio Goals
+To extend this defensive prototype even further for enterprise environments:
+1. **Interactive Host Shell**: Introduce a safe read-only CLI emulator in the dashboard to execute customized safe system queries (e.g., querying hardware metrics).
+2. **Dynamic Wazuh / OSquery Connectors**: Create actual connector plugins that pull live endpoint telemetry directly from structured OSquery databases.
+3. **Multi-Agent Fleet Dashboard**: Expand the UI to support fleet monitoring, allowing a security analyst to switch between multiple host agents (`agent-01`, `agent-02`) connected via WebSockets.
+4. **Active Policy Enforcement**: Implement local secure triggers (e.g., automatically enabling the macOS firewall via local instructions if a disabled status is audited).
+

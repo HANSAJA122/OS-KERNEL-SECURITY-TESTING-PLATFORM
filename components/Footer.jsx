@@ -9,6 +9,8 @@ const quickLinks = [
   { label: 'Modules', href: '#modules' },
   { label: 'Dashboard', href: '#dashboard' },
   { label: 'Report', href: '#report' },
+  { label: 'Timeline', href: '#timeline' },
+  { label: 'Integrity', href: '#integrity' },
   { label: 'Learning', href: '#learning' },
 ];
 

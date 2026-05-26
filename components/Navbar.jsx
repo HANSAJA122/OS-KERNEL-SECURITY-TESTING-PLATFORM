@@ -10,6 +10,8 @@ const navLinks = [
   { label: 'MODULES', href: '#modules' },
   { label: 'DASHBOARD', href: '#dashboard' },
   { label: 'REPORT', href: '#report' },
+  { label: 'TIMELINE', href: '#timeline' },
+  { label: 'INTEGRITY', href: '#integrity' },
   { label: 'LEARNING', href: '#learning' },
   { label: 'CONTACT', href: '#contact' },
 ];
