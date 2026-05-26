@@ -15,9 +15,21 @@ const quickLinks = [
 ];
 
 const socialIcons = [
-  { icon: Globe, label: 'GitHub' },
-  { icon: Mail, label: 'Mail' },
-  { icon: BookOpen, label: 'Docs' },
+  { 
+    icon: Globe, 
+    label: 'LinkedIn', 
+    href: 'https://www.linkedin.com/in/shashith-hansaja-931796247/' 
+  },
+  { 
+    icon: Mail, 
+    label: 'Email', 
+    href: 'mailto:whshansaja.w@gmail.com' 
+  },
+  { 
+    icon: BookOpen, 
+    label: 'GitHub', 
+    href: 'https://github.com/HANSAJA122/OS-KERNEL-SECURITY-TESTING-PLATFORM' 
+  },
 ];
 
 const containerVariants = {
@@ -55,13 +67,12 @@ export default function Footer() {
           </span>
         </motion.div>
 
-        {/* ── Tagline ── */}
+        {/* ── Tagline & Developer Credit ── */}
         <motion.p
           variants={itemVariants}
           className="mx-auto max-w-2xl text-sm leading-relaxed text-[#4b5576] mb-8"
         >
-          Developed as an educational cybersecurity project for learning OS Kernel Security Testing
-          concepts.
+          Developed by <span className="text-[#06d6a0] font-semibold font-mono">Shashith Hansaja</span> (<a href="mailto:whshansaja.w@gmail.com" className="hover:text-[#06d6a0] underline transition-colors">whshansaja.w@gmail.com</a>) as an educational cybersecurity project for learning OS Kernel Security Testing concepts.
         </motion.p>
 
         {/* ── Animated gradient divider ── */}
@@ -96,14 +107,17 @@ export default function Footer() {
           variants={itemVariants}
           className="mb-10 flex items-center justify-center gap-4"
         >
-          {socialIcons.map(({ icon: Icon, label }) => (
-            <span
+          {socialIcons.map(({ icon: Icon, label, href }) => (
+            <a
               key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label={label}
               className="group inline-flex h-10 w-10 items-center justify-center rounded-lg border border-[#151a2e] bg-[#0c0f1a] text-[#4b5576] transition-all duration-200 hover:border-[#06d6a0]/30 hover:text-[#06d6a0] hover:shadow-[0_0_12px_rgba(6,214,160,0.08)] cursor-pointer"
             >
               <Icon className="h-[18px] w-[18px] transition-transform duration-200 group-hover:scale-110" />
-            </span>
+            </a>
           ))}
         </motion.div>
 
@@ -112,7 +126,7 @@ export default function Footer() {
           variants={itemVariants}
           className="font-mono text-[10px] text-[#3d4566] mb-2"
         >
-          © 2026 KSTP — Kernel Security Testing Platform. Educational Use Only.
+          © 2026 Shashith Hansaja — Kernel Security Testing Platform. All Rights Reserved.
         </motion.p>
 
         {/* ── Disclaimer ── */}
