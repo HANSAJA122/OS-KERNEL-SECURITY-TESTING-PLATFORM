@@ -11,10 +11,11 @@ import LearningGuide from "@/components/LearningGuide";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-  const [reportResults, setReportResults] = useState([]);
+  const [reportData, setReportData] = useState(null);
 
-  const handleTestComplete = (results) => {
-    setReportResults(results);
+  const handleTestComplete = (data) => {
+    // Stores the complete report payload (supporting both simulated array and live agent object)
+    setReportData(data);
   };
 
   return (
@@ -24,7 +25,7 @@ export default function Home() {
       <About />
       <TestingModules />
       <Dashboard onTestComplete={handleTestComplete} />
-      <ReportTable results={reportResults} />
+      <ReportTable reportData={reportData} />
       <LearningGuide />
       <Footer />
     </main>
